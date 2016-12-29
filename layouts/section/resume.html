@@ -1,0 +1,360 @@
+{{ partial "header.html" . }}
+
+{{ partial "navigation.html" . }}
+
+<div class="container">
+  <div class="box shadow-two">
+    <h1 class="title is-1 has-text-centered">Torleif Nielsen</h1>
+    <h2 class="subtitle is-2 has-text-centered">Software Developer</h2>
+    <h3 class="subtitle is-3 has-text-centered">Curriculum Vitae</h3>
+
+    <hr>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child notification shadow-two">
+              <p class="title">
+                <span class="icon is-medium">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+                About
+              </p>
+
+              <div class="box">
+                {{ .Site.Data.resume.basics.summary }}
+              </div>
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <p class="title">
+                <span class="icon is-medium">
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                </span>
+                Work Experience
+              </p>
+
+              {{ range .Site.Data.resume.work }}
+                <div class="card is-fullwidth">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      {{ .position }}
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="subtitle is-6">
+                            {{ .startDate | dateFormat "January, 2006"}}
+                            &mdash;
+                            {{ .endDate | dateFormat "January, 2006" }}
+                          </p>
+
+                          <p class="subtitle is-5">
+                              <span class="icon">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                              </span>
+                            <a href="{{ .website }}">
+                              {{ .website }}
+                            </a>
+                          </p>
+
+                          <p>
+                            <b>Company:</b> {{ .company }}
+                            <br>
+                            {{ .summary }}
+                          </p>
+                        </div>
+                      </div>
+
+                      <hr>
+
+                      <h5 class="title is-5">
+                        <b>Highlights</b>
+                      </h5>
+
+                      {{ range .highlights }}
+                        <div class="notification is-info">
+                          {{ . }}
+                        </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+                <br>
+              {{ end }}
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <p class="title">
+                <span class="icon is-medium">
+                  <i class="fa fa-group" aria-hidden="true"></i>
+                </span>
+                Volunteer
+              </p>
+              {{ range .Site.Data.resume.volunteer }}
+              <div class="card is-fullwidth">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    {{ .position }}
+                  </p>
+                </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="subtitle is-5">
+                              <span class="icon">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                              </span>
+                            <a href="{{ .website }}">
+                              {{ .website }}
+                            </a>
+                          </p>
+
+                          <p>
+                            <b>Organization:</b> {{ .organization }}
+                            <br>
+                            {{ .summary }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-vertical is-4">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child notification shadow-two">
+              <p class="title">
+                <span class="icon is-medium">
+                  <i class="fa fa-bullseye" aria-hidden="true"></i>
+                </span>
+                Contact
+              </p>
+              <div class="box">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="icon">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>
+                      </td>
+                      <td>
+                        {{ .Site.Data.resume.basics.location.address }}<br>
+                        {{ .Site.Data.resume.basics.location.city }},
+                        {{ .Site.Data.resume.basics.location.region }},
+                        {{ .Site.Data.resume.basics.location.postalCode }},
+                        {{ .Site.Data.resume.basics.location.countryCode }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="icon">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                      </td>
+                      <td>
+                        {{ .Site.Data.resume.basics.phone }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="icon">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                      </td>
+                      <td>
+                        {{ .Site.Data.resume.basics.email }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="icon">
+                          <i class="fa fa-globe" aria-hidden="true"></i>
+                        </span>
+                      </td>
+                      <td>
+                        {{ .Site.Data.resume.basics.website }}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <div class="content">
+                <p class="title">
+                  <span class="icon is-medium">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                  </span>
+                  Education
+                </p>
+                {{ range .Site.Data.resume.education }}
+                  <div class="box">
+                    <p class="title is-5">
+                      <b>{{ .institution }}</b>
+                    </p>
+                    <span class="icon">
+                      <i class="fa fa-graduation-cap"></i>
+                    </span>
+                    &nbsp;
+                    {{ .studyType }}
+                    <br>
+                    {{ .area }}
+                    {{ .startDate | dateFormat "2006" }}
+                    &mdash;
+                    {{ .endDate | dateFormat "2006" }}
+                    <br>
+                    GPA: {{ .gpa }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <div class="content">
+                <p class="title">
+                  <span class="icon is-medium">
+                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                  </span>
+                  Skills
+                </p>
+                <p class="subtitle is-5">
+                  Tools I use or can jumpstart in a day
+                </p>
+                {{ range .Site.Data.resume.skills }}
+                  <div class="box">
+                    <div class="media">
+                      <div class="media-left">
+                        <p class="title is-5">
+                          <b>{{ .name }}</b>
+                        </p>
+                      </div>
+                      <div class="media-right">
+                        <span class="tag is-primary is-small">
+                          {{ .level }}
+                        </span>
+                      </div>
+                    </div>
+                    {{ range .keywords }}
+                      <span class="tag is-medium is-info">
+                        {{ . }}
+                      </span>
+                      <br>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <div class="content">
+                <p class="title">
+                  <span class="icon is-medium">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                  </span>
+                  Publications
+                </p>
+                <p class="subtitle is-5">
+                  Some stuff I'm writing
+                </p>
+                {{ range .Site.Data.resume.publications }}
+                  <div class="card is-fullwidth">
+                    <div class="card-header">
+                      <p class="card-header-title">
+                        <b>{{ .name }}</b>
+                      </p>
+                    </div>
+                    <div class="card-content">
+                      <p>
+                        <span class="icon">
+                          <i class="fa fa-bookmark" aria-hidden="true"></i>
+                        </span>
+                        {{ .publisher }}
+                      </p>
+                      <p class="subtitle is-6">
+                        {{ .releaseDate | dateFormat "2 January 2006"}}
+                      </p>
+                      <p class="subtitle is-6">
+                          <span class="icon is-small">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                          </span>
+                        <a href="{{ .website }}">
+                          {{ .website }}
+                        </a>
+                      </p>
+                      <p>
+                        {{ .summary }}
+                      </p>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <div class="content">
+                <p class="title">
+                  <span class="icon is-medium">
+                    <i class="fa fa-language" aria-hidden="true"></i>
+                  </span>
+                  Languages
+                </p>
+                <p class="subtitle is-5">
+                  Working on human languages too
+                </p>
+                {{ range .Site.Data.resume.languages }}
+                  <div class="box">
+                    <div class="media">
+                      <div class="media-left">
+                        <p class="title is-5">
+                          <b>{{ .language }}</b>
+                        </p>
+                      </div>
+                      <div class="media-right">
+                        <span class="tag is-primary is-small">
+                          {{ .fluency }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="tile is-child notification shadow-two">
+              <div class="content">
+                <p class="title">
+                  <span class="icon is-medium">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                  </span>
+                  Interests
+                </p>
+                <div class="box">
+                  {{ range .Site.Data.resume.interests }}
+                    <nav class="panel">
+                      <div class="panel-heading">
+                        {{ .name }}
+                      </div>
+                      {{ range .keywords }}
+                        <div class="panel-block">
+                          {{ . }}
+                        </div>
+                      {{ end }}
+                    </nav>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

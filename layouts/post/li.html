@@ -1,0 +1,18 @@
+<div class="box shadow-two">
+  <a class="" href="{{ .Permalink }}">
+    <p class="title">{{ .Title }}</p>
+    <p class="subtitle">
+      {{ .Date.Format "January 2, 2006" }}
+    </p>
+  </a>
+  <br>
+  <article class="media">
+    <div class="media-content">
+      <p>{{ .Summary }}</p>
+    </div>
+  </article>
+  <hr>
+  <a class="" href="{{ .Permalink }}">
+    Read More
+  </a>
+</div>

@@ -1,0 +1,114 @@
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// // 1. Initial variables
+//
+// // Colors
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 74%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 71%,  48%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 100%, 61%) !default
+$dark-red:     darken(#F44336, 10%);
+// Material Palette Colors
+$primary-color-dark:   hsl(232, 54%, 41%);
+$primary-color:        hsl(231, 48%, 48%);
+$primary-color-light:  hsl(232, 45%, 84%);
+$primary-color-text:   $white;
+$accent-color:         #FF5252;
+$primary-text-color:   $black-ter;
+$secondary-text-color: $grey;
+$divider-color:        $grey-light;
+
+$weight-normal: 400 !default
+$weight-bold: 700 !default
+$weight-title-normal: 300 !default
+$weight-title-bold: 500 !default
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 2. Primary colors
+
+$primary: $primary-color-dark !default
+
+$info: lighten($primary-color-light, 5%) !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $orange !default
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+// ////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+// // 3. Applied variables
+//
+// // Invert colors
+// $primary-invert: findColorInvert($primary) !default
+//
+// $info-invert: findColorInvert($info) !default
+// $success-invert: findColorInvert($success) !default
+// $warning-invert: findColorInvert($warning) !default
+// $danger-invert: findColorInvert($danger) !default
+//
+// $light-invert: $dark !default
+// $dark-invert: $light !default
+//
+// // General colors
+// $body-background: $white-ter !default
+//
+// $background: $white-ter !default
+//
+// $border: $grey-lighter !default
+// $border-hover: $grey-light !default
+//
+// // Text colors
+// $text: $grey-dark !default
+// $text-invert: findColorInvert($text) !default
+// $text-light: $grey !default
+// $text-strong: $grey-darker !default
+//
+// // Code colors
+// $code: $red !default
+// $code-background: $background !default
+//
+// $pre: $text !default
+// $pre-background: $background !default
+//
+// // Link colors
+$link: $primary !default
+// $link-invert: $primary-invert !default
+// $link-visited: $purple !default
+//
+$link-hover: $accent-color !default
+// $link-hover-background: $white-ter !default
+// $link-hover-border: $grey-darker !default
+//
+// $link-active: $grey-darker !default
+// $link-active-border: $grey-darker !default
+//
+// // Typography
+// $family-primary: $family-sans-serif !default
+// $family-code: $family-monospace !default
+//
+// $size-small: $size-7 !default
+// $size-normal: $size-6 !default
+// $size-medium: $size-5 !default
+// $size-large: $size-3 !default
+// $size-huge: $size-1 !default

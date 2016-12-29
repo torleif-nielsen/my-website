@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<div class="container">
+  <div class="columns">
+    <div class="column box shadow-two">
+      <h2 class="title is-2">{{ .Title }}</h2>
+      <h3 class="subtitle is-3">Status: <em>{{ .Status}}</em></h3>
+
+      <div class="columns">
+        <div class="column">
+          Tooling
+          <br>
+          {{ range .Params.tools }}
+          <span class="tag is-medium is-info">
+            {{ . }}
+          </span>
+          {{ end }}
+        </div>
+        <div class="column">
+          Categories
+          <br>
+          {{ range .Params.categories }}
+          <span class="tag is-medium is-info">
+            {{ . }}
+          </span>
+          {{ end }}
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="markdown-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,51 @@
+.box {
+  border-radius: 2px;
+}
+
+.tag {
+  border-radius: 2px;
+  margin-bottom: 3px;
+}
+
+.tile {
+  border-radius: 2px;
+}
+
+.icon {
+  color: $primary-color-dark;
+}
+
+.icon:hover {
+  color: $accent-color;
+}
+
+.nav-center {
+  a {
+    color: $primary-color-dark;
+  }
+}
+
+h1 {
+  @extend .title;
+  @extend .is-1;
+}
+
+h2 {
+  @extend .title;
+  @extend .is-2;
+}
+
+h3 {
+  @extend .title;
+  @extend .is-3;
+}
+
+h4 {
+  @extend .title;
+  @extend .is-4;
+}
+
+h5 {
+  @extend .title;
+  @extend .is-5;
+}

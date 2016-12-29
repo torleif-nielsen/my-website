@@ -1,0 +1,26 @@
+<div class="box shadow-two">
+  <article class="media">
+    <figure class="media-left has-border-right">
+      <a class="" href="{{ .Permalink }}">
+        <p class="title">{{ .Title }}</p>
+      </a>
+      <h4 class="">
+        {{ .Date.Format "January, 2006" }}
+      </h4>
+
+      {{ range .Params.tools }}
+          <span class="tag is-medium is-info">
+            {{ . }}
+          </span>
+          <br>
+      {{ end }}
+
+      <a class="" href="{{ .Permalink }}">
+        Read More
+      </a>
+    </figure>
+    <div class="media-content">
+      <p>{{ .Summary }}</p>
+    </div>
+  </article>
+</div>

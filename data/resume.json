@@ -1,0 +1,165 @@
+{
+  "basics": {
+    "name": "Torleif Nielsen",
+    "label": "Software Developer",
+    "picture": "profile_picture.jpg",
+    "email": "torleif@hawaii.edu",
+    "phone": "(808) 226-5593",
+    "website": "http://torleif.io",
+    "summary": " Torleif hails from Honolulu, Hawaii. He has earned a degree in Computer Science with focuses in Computer Security and Web Application development from the University of Hawaii at Manoa. He held a position at the University's Apple Service center as the lead technician and database administrator of the department's SQL store for their products. He later went on to work for the Distance Course Design & Consulting Group as one of two full-stack engineers developing a Rails (4) application to provide online creation and distribution of standardized tests to Hawaiian Immersion Schools for K-12. His greatest achievements include maintaining a perfect service score in his last 5 months of work servicing Apple products, and optimizing CSV data exports in Rails to bring a 1-2 minute turn around time down to 5-10 seconds. His non-work interests involve the outdoors, publishing tutorials online, working on open source projects, and tinkering with the latest tools on the web.",
+    "location": {
+      "address": "1433 Kewalo St",
+      "postalCode": "96822",
+      "city": "Honolulu",
+      "countryCode": "US",
+      "region": "Hawaii"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Distance Course Design & Consulting Group",
+      "position": "Web Programmer",
+      "website": "https://dcdc.coe.hawaii.edu/",
+      "startDate": "2015-11-01T12:22:59-08:00",
+      "endDate": "2016-12-16T12:22:59-08:00",
+      "summary": "Based in the College of Education at the University of Hawai‘i, their mission is to empower instructors and engage learners by expertly designing instructional and digital content. Their partners include UH and external entities, non-profit and government clients.",
+      "highlights": [
+        "One of two primary developers on a from-scratch Ruby on Rails application to provide an internationalized online platform for the creation, distribution, and scoring of standardized tests for K-12 in Hawaiian language immersion schools.",
+        "Designed and implemented the systems for students to take an exam, for teachers to grade exams, and to export data stored in MySQL to CSV.",
+        "Optimized CSV export methods to bring turnaround time down from 1-2 minutes to 5-10 seconds."
+      ]
+    },
+    {
+      "company": "University of Hawaii at Manoa Bookstore",
+      "position": "Lead Technician/Database Administrator",
+      "website": "http://www.bookstore.hawaii.edu/manoa/home.aspx",
+      "startDate": "2013-09-01T12:22:59-08:00",
+      "endDate": "2015-10-20T12:22:59-08:00",
+      "summary": "A sizable college bookstore for textbooks, computers, office supplies & school apparel, plus printing services. They are the primary suppliers to the University of Hawaii system and are an Apple Authorized Service Provider.",
+      "highlights": [
+        "Three awards for excellence in customer service.",
+        "Maintained a perfect service score for the location for five consecutive months, prompting visit and award from Apple.",
+        "Trained new technicians and established policies and workflows for more satisfactory customer experience.",
+        "Managed a MS SQL datastore for the bookstore's products, as well as a customer facing FileMaker form for registration of department Apple purchases."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "TheDeepEnd",
+      "position": "Mentor/Founder",
+      "website": "https://thedeepend.github.io/",
+      "startDate": "2015-3-01",
+      "endDate": "2016-12-16",
+      "summary": "A GitHub organization comprised of students interested in learning beyond the scope of the University curriculum.",
+      "highlights": []
+    },
+    {
+      "organization": "AT&T",
+      "position": "Hackathon Sensei/Mentor",
+      "website": "https://www.eventbrite.com/e/att-mobile-app-hackathon-hawaii-tickets-21029657271",
+      "startDate": "2016-03-11",
+      "endDate": "2016-03-12",
+      "summary": "2016 AT&T Mobile App Hackathon, an event produced by the AT&T Developer Program, is designed for attendees interested in coding mobile apps or hacking hardware solutions.",
+      "highlights": []
+    },
+    {
+      "organization": "University of Hawaii at Manoa",
+      "position": "Red Team Offense",
+      "website": "http://www.hawaii.edu/cyberrange/index.html",
+      "startDate": "2015-06-3",
+      "endDate": "2015-06-4",
+      "summary": "The 2015 Po‘oihe Cyber Security Exercise is a red team vs blue team exercise designed to present an environment where blue team members must defend a network and its services in the midst of a state-wide emergency such as a natural disaster scenario. The exercise will help assess the depth of understanding and operational competency in managing the challenges inherent in any organization's systems and network infrastructure.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii at Manoa",
+      "area": "B.S. Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2011-08-23",
+      "endDate": "2016-12-16",
+      "gpa": "3.35",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [
+    {
+      "name": "Rails 5 Basics",
+      "publisher": "GitBook",
+      "releaseDate": "2016-11-27",
+      "website": "https://www.gitbook.com/book/torleif-nielsen/rails-5-basics/details",
+      "summary": "A work in progress tutorial series for developing applications in Rails 5 oriented towards beginners."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Expert",
+      "keywords": [
+        "Java",
+        "Ruby",
+        "Python",
+        "C",
+        "C++",
+        "Haskell",
+        "Elm",
+        "Elixir"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Fluent",
+      "keywords": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Expert",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Rails",
+        "Phoenix",
+        "WordPress",
+        "React"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Elementary"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Open Source",
+      "keywords": [
+        "Tutorials",
+        "Projects"
+      ]
+    },
+    {
+      "name": "Education",
+      "keywords": [
+        "EdTech",
+        "Computer Science",
+        "STEAM"
+      ]
+    }
+  ],
+  "references": []
+}

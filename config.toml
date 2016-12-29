@@ -1,0 +1,23 @@
+languageCode = "en-us"
+title = "Torleif Nielsen"
+baseurl = "http://www.torleif.io"
+
+[[menu.main]]
+  name = "Home"
+  url  = "/"
+  weight = 1
+[[menu.main]]
+  name = "About"
+  url  = "/about/"
+  identifier = "about"
+  weight = 2
+[[menu.main]]
+  name = "Posts"
+  identifier = "posts"
+  url  = "/posts/"
+  weight = 3
+[[menu.main]]
+  name = "Projects"
+  identifier = "projects"
+  url  = "/projects/"
+  weight = 4

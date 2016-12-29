@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://torleif.io/project/orca/</loc>
+    <lastmod>2016-12-27T20:29:57-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/post/welcome/</loc>
+    <lastmod>2016-10-03T13:00:29-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/categories/</loc>
+    <lastmod>2016-12-27T20:29:57-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/post/</loc>
+    <lastmod>2016-10-03T13:00:29-10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/project/</loc>
+    <lastmod>2016-12-27T20:29:57-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://torleif.io/</loc>
+    <lastmod>2016-12-27T20:29:57-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+{{ partial "navigation.html" }}
+
+<section class="hero is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="">The Full Story</h1>
+      <h2 class="subtitle">Or at least the important parts</h2>
+    </div>
+  </div>
+</section>
+<div class="section">
+  <div class="markdown-content">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

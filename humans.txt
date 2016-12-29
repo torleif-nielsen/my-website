@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: Torleif Nielsen
+  Site: torleif-nielsen.github.io
+  Twitter:
+  Github: @torleif-nielsen
+  Location: Honolulu, HI
+
+/* SITE */
+  Standards: HTML5, MD, SCSS/CSS3, JS
+  Components: Hugo, Brunch, Bulma 
