@@ -6,13 +6,13 @@
     "email": "torleif@hawaii.edu",
     "phone": "(808) 226-5593",
     "website": "http://torleif.io",
-    "summary": " Torleif hails from Honolulu, Hawaii. He has earned a degree in Computer Science with focuses in Computer Security and Web Application development from the University of Hawaii at Manoa. He held a position at the University's Apple Service center as the lead technician and database administrator of the department's SQL store for their products. He later went on to work for the Distance Course Design & Consulting Group as one of two full-stack engineers developing a Rails (4) application to provide online creation and distribution of standardized tests to Hawaiian Immersion Schools for K-12. His greatest achievements include maintaining a perfect service score in his last 5 months of work servicing Apple products, and optimizing CSV data exports in Rails to bring a 1-2 minute turn around time down to 5-10 seconds. His non-work interests involve the outdoors, publishing tutorials online, working on open source projects, and tinkering with the latest tools on the web.",
+    "summary": " Torleif is originally from Honolulu, Hawaii. He has earned a degree in Computer Science with focuses in Computer Security and Web Application development from the University of Hawaii at Manoa. He held a position at the University's Apple Service center as the lead technician and database administrator of the department's SQL store for their products. He later went on to work for the Distance Course Design & Consulting Group as one of two full-stack engineers developing a Rails (4) application to provide online creation and distribution of standardized tests to Hawaiian Immersion Schools for K-12. His greatest achievements include maintaining a perfect service score in his last 5 months of work servicing Apple products, and optimizing CSV data exports in Rails to bring a 1-2 minute turn around time down to 5-10 seconds. He now operates out of Berkeley, spending what free time he has pursuing his interests in the outdoors, publishing tutorials online, working on open source projects, and tinkering with the latest tools on the web.",
     "location": {
-      "address": "1433 Kewalo St",
-      "postalCode": "96822",
-      "city": "Honolulu",
+      "address": "",
+      "postalCode": "94705",
+      "city": "Berkeley",
       "countryCode": "US",
-      "region": "Hawaii"
+      "region": "California"
     },
     "profiles": []
   },
@@ -25,9 +25,9 @@
       "endDate": "2016-12-16T12:22:59-08:00",
       "summary": "Based in the College of Education at the University of Hawai‘i, their mission is to empower instructors and engage learners by expertly designing instructional and digital content. Their partners include UH and external entities, non-profit and government clients.",
       "highlights": [
-        "One of two primary developers on a from-scratch Ruby on Rails application to provide an internationalized online platform for the creation, distribution, and scoring of standardized tests for K-12 in Hawaiian language immersion schools.",
-        "Designed and implemented the systems for students to take an exam, for teachers to grade exams, and to export data stored in MySQL to CSV.",
-        "Optimized CSV export methods to bring turnaround time down from 1-2 minutes to 5-10 seconds."
+        "Full stack rails development on a project known as Hawaiian Assessment; a platform for creating, proctoring, and scoring standardized exams for Native Hawaiian immersion schools.",
+        "Led feature development for Hawaiian Assessment, notably the proctoring, scoring, and student information data export features.",
+        "Optimized data exports by reducing reliance on ActiveRecord, instead using in memory data structures and Ruby filters, resulting in a factor of 12 turnaround time improvement at the cost of ~14% increased memory usage."
       ]
     },
     {
